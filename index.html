@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/logo-square.png" />
+    <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico" />
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -23,8 +23,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Travel</title>
+    <title>Travel Today!</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -34,7 +36,7 @@
     >
       <div class="container-fluid card-deck">
         <!-- Navbar logo -->
-        <a class="navbar-brand nav-link ms-4" href="#">
+        <a class="navbar-brand nav-link ms-4" href="index.html">
           <img src="images/logo.png" height="35" alt="" loading="lazy" />
         </a>
         <!-- Navbar toggle responsive -->
@@ -72,8 +74,8 @@
               data-bs-toggle="modal"
               data-bs-target="#modalSignin"
             >
-              Login</a
-            >
+              Login
+            </a>
             <a
               href=""
               type="button"
@@ -81,8 +83,8 @@
               data-bs-toggle="modal"
               data-bs-target="#modalSignup"
             >
-              Sign Up</a
-            >
+              Sign Up
+            </a>
           </div>
         </div>
       </div>
@@ -244,19 +246,19 @@
                 </div>
                 <ul class="social mb-0 list-inline mt-3 text-center">
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="images/icon/facebook.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link">
+                      <img src="images/icon/facebook.svg" alt="facebook" />
+                    </a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="images/icon/instagram.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link">
+                      <img src="images/icon/instagram.svg" alt="instagram" />
+                    </a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="images/icon/twitter.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link">
+                      <img src="images/icon/twitter.svg" alt="twitter" />
+                    </a>
                   </li>
                 </ul>
               </form>
@@ -282,111 +284,114 @@
             translate-middle
             text-center text-white
           "
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
-          <h1 class="display-4 fw-bold">Explore Indonesia</h1>
-          <p class="lead fw-normal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-            viverra aliquam adipiscing sed diam, in sed. Adipiscing non posuere
-            egestas ipsum orci, ipsum ipsum mauris.
+          <h2 class="fw-bold">Explore Indonesia</h2>
+          <p class="fw-normal">
+            Every particular in nature, a leaf, a drop, a crystal, a moment of
+            time is related to the whole, and partakes of the perfection of the
+            whole.
           </p>
-          <a class="btn btn-outline-light btn-sm" href="html/gallery.html"
-            >Explore</a
-          >
+          <a class="btn btn-outline-light" href="html/gallery.html">Explore</a>
         </div>
         <img src="images/landing.jpg" class="img-fluid" alt="gunung" />
-        <div class="position-absolute top-100 start-50 translate-middle">
-          <div class="mw-100 mh-100 cari text-white">
-            <div class="row box text-center">
-              <div class="col position-relative">
-                <div class="position-absolute top-50 start-50 translate-middle">
-                  <a href="#laut">
-                    <img src="images/sea-block.jpg" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="col position-relative">
-                <div class="position-absolute top-50 start-50 translate-middle">
-                  <a href="#gunung"
-                    ><img src="images/gunung-block.jpg" alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="col position-relative">
-                <div class="position-absolute top-50 start-50 translate-middle">
-                  <a href="#situs"
-                    ><img src="images/histori-block.jpg" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <div class="container" style="height: 200px" id="laut"></div>
-      <div class="container my-5 px-5">
+      <div style="height: 200px"></div>
+      <h1
+        class="fw-bold text-center"
+        data-aos="fade-up"
+        data-aos-duration="600"
+      >
+        Explore Your Destination
+      </h1>
+      <div style="height: 100px"></div>
+
+      <div class="container my-5">
         <div class="row">
-          <div class="col-6 pe-5 align-self-center">
-            <h1 class="display-8 fw-bold">Sea</h1>
-            <p class="lead fw-normal py-4">
+          <div
+            class="col-6 pe-5 align-self-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h2 class="display-6 fw-bold">Sea</h2>
+            <p class="lead fw-normal py-2">
               The sea, connected as the world ocean or simply the ocean, is the
               body of salty water that covers approximately 71 percent of the
               Earth's surface.
             </p>
             <a
-              class="btn btn-outline-primary btn-lg"
+              class="btn btn-outline-primary"
               href="html/konten-1.html"
               role="button"
-              >More</a
             >
+              More
+            </a>
           </div>
-          <div class="col-3 align-self-center">
+          <div
+            class="col-3 align-self-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <img class="shadow img-fluid" src="images/1-1.jpg" alt="" />
           </div>
-          <div class="col-3">
+          <div class="col-3" data-aos="fade-right" data-aos-duration="800">
             <img class="shadow img-fluid" src="images/1-2.jpg" alt="" />
           </div>
         </div>
       </div>
-      <div class="container" style="height: 200px" id="gunung"></div>
-      <div class="container my-5 px-5">
+      <div class="container" style="height: 170px"></div>
+      <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3" data-aos="fade-right" data-aos-duration="1000">
             <img class="shadow img-fluid" src="images/2-2.jpg" alt="" />
           </div>
-          <div class="col-3 align-self-center">
+          <div
+            class="col-3 align-self-center"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
             <img class="shadow img-fluid" src="images/2-1.jpg" alt="" />
           </div>
-          <div class="col-6 ps-5 align-self-center">
-            <h1 class="display-8 fw-bold">Mountain</h1>
-            <p class="lead fw-normal py-4">
+          <div
+            class="col-6 ps-5 align-self-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1 class="display-6 fw-bold">Mountain</h1>
+            <p class="lead fw-normal py-2">
               A mountain is an elevated portion of the Earth's crust, generally
               with steep sides that show significant exposed bedrock.
             </p>
-            <button type="button" class="btn btn-outline-primary btn-lg">
-              More
-            </button>
+            <button type="button" class="btn btn-outline-primary">More</button>
           </div>
         </div>
       </div>
-      <div class="container" style="height: 200px" id="situs"></div>
-      <div class="container my-5 px-5">
+      <div class="container" style="height: 170px"></div>
+      <div class="container">
         <div class="row">
-          <div class="col-6 pe-5 align-self-center">
-            <h1 class="display-8 fw-bold">Historic Site</h1>
-            <p class="lead fw-normal py-4">
+          <div
+            class="col-6 pe-5 align-self-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1 class="display-6 fw-bold">Historic Site</h1>
+            <p class="lead fw-normal py-2">
               Historic site or heritage site is an official location where
               pieces of political, military, cultural, or social history have
               been preserved due to their cultural heritage value.
             </p>
-            <button type="button" class="btn btn-outline-primary btn-lg">
-              More
-            </button>
+            <button type="button" class="btn btn-outline-primary">More</button>
           </div>
-          <div class="col-3 align-self-center">
+          <div
+            class="col-3 align-self-center"
+            data-aos="fade-down"
+            data-aos-duration="800"
+          >
             <img class="shadow img-fluid" src="images/3-1.jpg" alt="" />
           </div>
-          <div class="col-3">
+          <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
             <img class="shadow img-fluid" src="images/3-2.jpg" alt="" />
           </div>
         </div>
@@ -395,117 +400,121 @@
     </main>
 
     <!-- FOOTER -->
-    <div class="container">
-      <footer class="row row-cols-4 py-2 my-4">
-        <div class="col px-5">
-          <a
-            href="https://getbootstrap.com/"
-            class="
-              d-flex
-              align-items-center
-              mb-3
-              link-dark
-              text-decoration-none
-            "
-          >
-            <img src="images/logo-wide.png" height="50" alt="" loading="lazy" />
-          </a>
-          <p class="text-muted">deskripsi</p>
+    <footer class="bd-footer mt-5 bg-light">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              href="index.html"
+              class="
+                d-flex
+                align-items-center
+                mb-3
+                link-dark
+                text-decoration-none
+              "
+            >
+              <img
+                src="images/logo-wide.png"
+                height="40"
+                alt=""
+                loading="lazy"
+              />
+            </a>
+            <p class="text-muted small">Travel partner to your destination</p>
+          </div>
+
+          <div class="col-6 col-lg-3 offset-lg-3 mb-3">
+            <h5>Section</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="nav-link p-0 text-dark"> Home </a>
+              </li>
+              <li class="mb-2">
+                <a href="html/gallery.html" class="nav-link p-0 text-dark">
+                  Gallery
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="html/about.html" class="nav-link p-0 text-dark"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="" class="text-muted">
+                  <i class="fas fa-home me-2 text-muted"></i>
+                  Jakarta, Indonesia
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="" class="text-muted">
+                  <i class="fas fa-envelope me-2 text-muted"></i>
+                  contact@traveltoday.com
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="" class="text-muted">
+                  <i class="fas fa-phone me-2 text-muted"></i>
+                  +021 1122 0032
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col"></div>
-
-        <div class="col px-5">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="index.html" class="nav-link p-0 text-dark">Home</a>
+        <div class="d-flex justify-content-between py-4 mt-4 border-top">
+          © 2021 Travel Today, Inc. All rights reserved.
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                <img
+                  src="images/icon/github.svg"
+                  alt="github"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="html/gallery.html" class="nav-link p-0 text-dark"
-                >Gallery</a
-              >
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                <img
+                  src="images/icon/twitter.svg"
+                  alt="twitter"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="html/about.html" class="nav-link p-0 text-dark">About</a>
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                <img
+                  src="images/icon/instagram.svg"
+                  alt="instagram"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#">
+                <img
+                  src="images/icon/facebook.svg"
+                  alt="twitter"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
           </ul>
         </div>
-
-        <div class="col px-5">
-          <h5>Contact</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-3">
-              <a href="" class="text-muted">
-                <i class="fas fa-home me-3 text-muted"></i> New York, NY 10012,
-                U</a
-              >
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="text-muted">
-                <i class="fas fa-envelope me-3 text-muted"></i>
-                info@gmail.com</a
-              >
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="text-muted">
-                <i class="fas fa-phone me-3 text-muted"></i> + 01 234 567 88</a
-              >
-            </li>
-            <li class="nav-item mb-3">
-              <a href="" class="text-muted">
-                <i class="fas fa-print me-3 text-muted"></i> + 01 234 567 88</a
-              >
-            </li>
-          </ul>
-        </div>
-      </footer>
-      <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p>© 2021 Company, Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <img
-                src="images/icon/github.svg"
-                alt="github"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <img
-                src="images/icon/twitter.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <img
-                src="images/icon/instagram.svg"
-                alt="instagram"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <img
-                src="images/icon/facebook.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-        </ul>
       </div>
-    </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script
@@ -513,7 +522,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Javascript -->
     <script type="text/javascript">
       var nav = document.querySelector("nav");
 
@@ -524,6 +537,9 @@
           nav.classList.remove("bg-light", "text-white", "shadow");
         }
       });
+
+      //AOS
+      AOS.init();
     </script>
   </body>
 </html>
