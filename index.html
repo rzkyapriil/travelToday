@@ -26,6 +26,7 @@
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/testi.css" />
     <title>Travel Today!</title>
   </head>
   <body>
@@ -284,8 +285,8 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h1 class="fw-bold">Explore Indonesia</h1>
-            <p class="lead fw-normal">
+            <h1 class="fw-bold text-judul">Explore Indonesia</h1>
+            <p class="fw-normal text-p">
               Every particular in nature, a leaf, a drop, a crystal, a moment of
               time is related to the whole, and partakes of the perfection of
               the whole.
@@ -307,10 +308,10 @@
       </h1>
       <div style="height: 100px"></div>
 
-      <div class="container my-5">
+      <div class="container my-5 px-5">
         <div class="row">
           <div
-            class="col-6 pe-5 align-self-center"
+            class="col-md-6 mb-3 pe-5 align-self-center"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
@@ -329,32 +330,40 @@
             </a>
           </div>
           <div
-            class="col-3 align-self-center"
+            class="col-md-3 mb-3 align-self-center"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             <img class="shadow img-fluid" src="images/1-1.jpg" alt="" />
           </div>
-          <div class="col-3" data-aos="fade-right" data-aos-duration="800">
+          <div
+            class="col-md-3 mb-3"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
             <img class="shadow img-fluid" src="images/1-2.jpg" alt="" />
           </div>
         </div>
       </div>
       <div class="container" style="height: 170px"></div>
-      <div class="container">
+      <div class="container my-5 px-5">
         <div class="row">
-          <div class="col-3" data-aos="fade-right" data-aos-duration="1000">
+          <div
+            class="col-md-3 mb-3 order-3"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <img class="shadow img-fluid" src="images/2-2.jpg" alt="" />
           </div>
           <div
-            class="col-3 align-self-center"
+            class="col-md-3 mb-3 align-self-center order-2"
             data-aos="fade-right"
             data-aos-duration="800"
           >
             <img class="shadow img-fluid" src="images/2-1.jpg" alt="" />
           </div>
           <div
-            class="col-6 ps-5 align-self-center"
+            class="col-md-6 mb-3 pe-5 align-self-center order-1"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -363,15 +372,21 @@
               A mountain is an elevated portion of the Earth's crust, generally
               with steep sides that show significant exposed bedrock.
             </p>
-            <button type="button" class="btn btn-outline-primary">More</button>
+            <a
+              class="btn btn-outline-primary"
+              href="html/konten-2.html"
+              role="button"
+            >
+              More
+            </a>
           </div>
         </div>
       </div>
       <div class="container" style="height: 170px"></div>
-      <div class="container">
+      <div class="container my-5 px-5">
         <div class="row">
           <div
-            class="col-6 pe-5 align-self-center"
+            class="col-md-6 mb-3 pe-5 align-self-center"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -381,25 +396,83 @@
               pieces of political, military, cultural, or social history have
               been preserved due to their cultural heritage value.
             </p>
-            <button type="button" class="btn btn-outline-primary">More</button>
+            <a
+              class="btn btn-outline-primary"
+              href="html/konten-3.html"
+              role="button"
+            >
+              More
+            </a>
           </div>
           <div
-            class="col-3 align-self-center"
+            class="col-md-3 mb-3 align-self-center"
             data-aos="fade-down"
             data-aos-duration="800"
           >
             <img class="shadow img-fluid" src="images/3-1.jpg" alt="" />
           </div>
-          <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+          <div
+            class="col-md-3 mb-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img class="shadow img-fluid" src="images/3-2.jpg" alt="" />
           </div>
         </div>
       </div>
       <div class="container" style="height: 200px"></div>
     </main>
-
+    <div class="testimonials-clean">
+      <div class="container" data-aos="zoom-in" data-aos-duration="1400">
+        <div class="intro">
+          <h2 class="text-center">Testimonials</h2>
+          <p class="text-center">
+            Our customers love us! Read what they have to say below.
+          </p>
+        </div>
+        <div class="row people">
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <p class="description">
+                Amazing place, incredible service, definitely going back to
+                Indonesia
+              </p>
+            </div>
+            <div class="author">
+              <img class="rounded-circle" src="images/f1.jpg" />
+              <h5 class="name">Ben Johnson</h5>
+              <p class="title">Travel to Raja Ampat</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <p class="description">
+                Great services, great price, beautiful place.
+              </p>
+            </div>
+            <div class="author">
+              <img class="rounded-circle" src="images/f2.jpg" />
+              <h5 class="name">Carl Kent</h5>
+              <p class="title">Travel to Rinjani Mountain</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <p class="description">
+                Such an amazing place to visit, with a great price.
+              </p>
+            </div>
+            <div class="author">
+              <img class="rounded-circle" src="images/f3.jpg" />
+              <h5 class="name">Emily Clark</h5>
+              <p class="title">Travel to Pantai Kuta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- FOOTER -->
-    <footer class="bd-footer mt-5 bg-light">
+    <footer class="bd-footer bg-light">
       <div class="container pt-5">
         <div class="row">
           <div class="col-lg-3 mb-3">
