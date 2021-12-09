@@ -74,8 +74,7 @@
                 />
               </div>
               <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label"
-                  >
+                <label for="validationCustomUsername" class="form-label">
                   Guest</label
                 >
                 <input
@@ -131,14 +130,30 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarLightDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Destination
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarLightDropdownMenuLink"
+              >
                 <li><a class="dropdown-item" href="konten-1.html">Sea</a></li>
-                <li><a class="dropdown-item" href="konten-2.html">Mountain</a></li>
-                <li><a class="dropdown-item" href="konten-3.html">historical Site</a></li>
+                <li>
+                  <a class="dropdown-item" href="konten-2.html">Mountain</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="konten-3.html"
+                    >historical Site</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item mx-2">
@@ -176,94 +191,201 @@
 
     <main>
       <!-- Sign In Modal -->
-    <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignin" aria-labelledby="modalSigin" aria-hidden="">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <!-- <h5 class="modal-title">Modal title</h5> -->
-            <h2 class="fw-bold mb-0">Sign In</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
-              </div>
-              <button class="w-100 mb-1 btn btn-lg rounded-4 btn-primary" type="submit">Sign in</button>
-              <div class="or my-5">
-                <span class="bg-white px-2 fw-bold">OR</span>
-              </div>
-              <ul class="social mb-0 list-inline mt-3 text-center">
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt=""></a></li>
-              </ul>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-body text-center py-3">
-            Don't have an account?<a href="#" data-bs-target="#modalSignup" data-bs-toggle="modal" data-bs-dismiss="modal"> Sign up</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  ==================  -->
+      <div
+        class="modal fade py-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignin"
+        aria-labelledby="modalSigin"
+        aria-hidden=""
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h2 class="fw-bold mb-0">Sign In</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
 
-    <!-- Sign Up Modal -->
-    <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignup" aria-labelledby="modalSignup" aria-hidden="">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <h2 class="fw-bold mb-0">Sign Up</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-4"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button
+                  class="w-100 mb-1 btn btn-lg rounded-4 btn-primary"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+                <div class="or my-5">
+                  <span class="bg-white px-2 fw-bold">OR</span>
+                </div>
+                <ul class="social mb-0 list-inline mt-3 text-center">
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/facebook.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/instagram.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/twitter.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="Full Name" required>
-                <label for="floatingInput">Full Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
-              </div>
-              <button class="w-100 mb-3 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
-              <small class="text-muted">By signing up, you agree to our <small class="fw-bold">Terms , Data Policy and Cookies Policy. </small></small>
-              <div class="or my-5">
-                <span class="bg-white px-2 fw-bold">OR</span>
-              </div>
-              <ul class="social mb-0 list-inline mt-3 text-center">
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt=""></a></li>
-              </ul>
-            </form>
+        </div>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-body text-center py-3">
+              Don't have an account?<a
+                href="#"
+                data-bs-target="#modalSignup"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Sign up</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-body text-center py-3">
-            Have an account?<a href="#" data-bs-target="#modalSignin" data-bs-toggle="modal" data-bs-dismiss="modal"> Log in</a>
+      <!--  ==================  -->
+
+      <!-- Sign Up Modal -->
+      <div
+        class="modal fade py-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignup"
+        aria-labelledby="modalSignup"
+        aria-hidden=""
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h2 class="fw-bold mb-0">Sign Up</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="floatingInput">Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-4"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button
+                  class="w-100 mb-3 btn btn-lg rounded-4 btn-primary"
+                  type="submit"
+                >
+                  Sign up
+                </button>
+                <small class="text-muted"
+                  >By signing up, you agree to our
+                  <small class="fw-bold"
+                    >Terms , Data Policy and Cookies Policy.
+                  </small></small
+                >
+                <div class="or my-5">
+                  <span class="bg-white px-2 fw-bold">OR</span>
+                </div>
+                <ul class="social mb-0 list-inline mt-3 text-center">
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/facebook.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/instagram.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/twitter.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-body text-center py-3">
+              Have an account?<a
+                href="#"
+                data-bs-target="#modalSignin"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Log in</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--  ==================  -->
+      <!--  ==================  -->
       <section
         id="konten-1"
         class="d-flex align-items-center justify-content-center"
@@ -300,15 +422,14 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Raja Ampat is one of the world’s last wild places. 
-              A vast sprawl of tropical island jewels amid seas renowned as being the richest on our planet. 
-              A nursery and refuge for coral and fish species that are rapidly disappearing from elsewhere in the region, 
-              and the perfect place to really get away from it all.
+              Raja Ampat is one of the world’s last wild places. A vast sprawl
+              of tropical island jewels amid seas renowned as being the richest
+              on our planet. A nursery and refuge for coral and fish species
+              that are rapidly disappearing from elsewhere in the region, and
+              the perfect place to really get away from it all.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $79.99
-              </li>
+              <li class="tag__itemm">$79.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -342,17 +463,19 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Kuta Beach Bali is also an international tourist destination supported by the complete public 
-              facilities such as hotels, bars, restaurants, night club, souvenir shops, best shopping center, 
-              entertainments etc.  This beach is suitable as a place for play around with family, relax, swim, and surf. 
-              This beach has good wave for bali activities as surfing including surf lesson where the beginner surfer 
-              up to professional have ever experienced. The beauty of Kuta Beach Bali is complemented by the spectacular 
-              sunset that creates the romantic nuance that alluring every visitor.
+              Kuta Beach Bali is also an international tourist destination
+              supported by the complete public facilities such as hotels, bars,
+              restaurants, night club, souvenir shops, best shopping center,
+              entertainments etc. This beach is suitable as a place for play
+              around with family, relax, swim, and surf. This beach has good
+              wave for bali activities as surfing including surf lesson where
+              the beginner surfer up to professional have ever experienced. The
+              beauty of Kuta Beach Bali is complemented by the spectacular
+              sunset that creates the romantic nuance that alluring every
+              visitor.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $69.99
-              </li>
+              <li class="tag__itemm">$69.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -385,23 +508,26 @@
             </h1>
             <div class="postcard__subtitle small">
               <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Province of the Yogyakarta Special Region
+                <i class="fas fa-map-marker"></i> Province of the Yogyakarta
+                Special Region
               </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Parangtritis Beach is a lovely beach with many impressing phenomena, naturally and supra naturally. 
-              The waves regularly bring in new wood and bamboo, washing ashore from another nearby beach probably. 
-              Some wood is picked and taken away by locals to be used for their own house. Parangtritis is an 
-              enchanting sloping beach combined with rocky hills, dunes, and a white sandy beach. Besides being 
-              famous as a recreational spot. Parangtritis is also a sacred place. Many people come to the beach 
-              to do meditation. Up to now, this area is remaining functioned as the place to perform the traditional 
-              ceremony called labuhan. Many hotels and restaurants are available for sunbathe lovers.
+              Parangtritis Beach is a lovely beach with many impressing
+              phenomena, naturally and supra naturally. The waves regularly
+              bring in new wood and bamboo, washing ashore from another nearby
+              beach probably. Some wood is picked and taken away by locals to be
+              used for their own house. Parangtritis is an enchanting sloping
+              beach combined with rocky hills, dunes, and a white sandy beach.
+              Besides being famous as a recreational spot. Parangtritis is also
+              a sacred place. Many people come to the beach to do meditation. Up
+              to now, this area is remaining functioned as the place to perform
+              the traditional ceremony called labuhan. Many hotels and
+              restaurants are available for sunbathe lovers.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $29.99
-              </li>
+              <li class="tag__itemm">$29.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -448,9 +574,7 @@
               island.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $79.99
-              </li>
+              <li class="tag__itemm">$79.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -471,29 +595,65 @@
     <div class="container">
       <footer class="row row-col-sm-4 py-2 my-4">
         <div class="col-md mb-2 ps-5" data-aos="fade-up">
-          <a href="https://getbootstrap.com/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <img src="../images/logo-wide.png" height="50" alt="" loading="lazy"/>
+          <a
+            href="https://getbootstrap.com/"
+            class="
+              d-flex
+              align-items-center
+              mb-3
+              link-dark
+              text-decoration-none
+            "
+          >
+            <img
+              src="../images/logo-wide.png"
+              height="50"
+              alt=""
+              loading="lazy"
+            />
           </a>
-          <p class="text-muted small mt-2">Travel partner to your destination</p>
+          <p class="text-muted small mt-2">
+            Travel partner to your destination
+          </p>
         </div>
 
         <div class="col-md" data-aos="fade-up"></div>
-    
+
         <div class="col-md mb-3 ps-5" data-aos="fade-up">
           <h5>Section</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2 mt-1"><a href="../index.html" class="nav-link p-0 text-dark">Home</a></li>
-            <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-dark">Gallery</a></li>
-            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About</a></li>
+            <li class="nav-item mb-2 mt-1">
+              <a href="../index.html" class="nav-link p-0 text-dark">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="gallery.html" class="nav-link p-0 text-dark">Gallery</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link p-0 text-dark">About</a>
+            </li>
           </ul>
         </div>
-    
+
         <div class="col-md ps-5" data-aos="fade-up">
           <h5>Contact</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-3 mt-1"><a href="" class="text-muted"> <i class="fas fa-home me-3 text-muted"></i>  Jakarta, Indonesia</a></li>
-            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-envelope me-3 text-muted"></i>   contact@traveltoday.com</a></li>
-            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-phone me-3 text-muted"></i>   + 021 1122 0032</a></li>
+            <li class="nav-item mb-3 mt-1">
+              <a href="" class="text-muted">
+                <i class="fas fa-home me-3 text-muted"></i> Jakarta,
+                Indonesia</a
+              >
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-muted">
+                <i class="fas fa-envelope me-3 text-muted"></i>
+                contact@traveltoday.com</a
+              >
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-muted">
+                <i class="fas fa-phone me-3 text-muted"></i> + 021 1122 0032</a
+              >
+            </li>
           </ul>
         </div>
       </footer>
@@ -502,22 +662,42 @@
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/github.svg" alt="github" width="24" height="24">
+              <img
+                src="../images/icon/github.svg"
+                alt="github"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/twitter.svg" alt="twitter" width="24" height="24">
+              <img
+                src="../images/icon/twitter.svg"
+                alt="twitter"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/instagram.svg" alt="instagram" width="24" height="24">
+              <img
+                src="../images/icon/instagram.svg"
+                alt="instagram"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/facebook.svg" alt="twitter" width="24" height="24">
+              <img
+                src="../images/icon/facebook.svg"
+                alt="twitter"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
         </ul>

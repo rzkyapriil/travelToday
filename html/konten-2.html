@@ -74,8 +74,7 @@
                 />
               </div>
               <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label"
-                  >
+                <label for="validationCustomUsername" class="form-label">
                   Guest</label
                 >
                 <input
@@ -131,14 +130,30 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarLightDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Destination
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarLightDropdownMenuLink"
+              >
                 <li><a class="dropdown-item" href="konten-1.html">Sea</a></li>
-                <li><a class="dropdown-item" href="konten-2.html">Mountain</a></li>
-                <li><a class="dropdown-item" href="konten-3.html">historical Site</a></li>
+                <li>
+                  <a class="dropdown-item" href="konten-2.html">Mountain</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="konten-3.html"
+                    >historical Site</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item mx-2">
@@ -176,94 +191,201 @@
 
     <main>
       <!-- Sign In Modal -->
-    <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignin" aria-labelledby="modalSigin" aria-hidden="">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <!-- <h5 class="modal-title">Modal title</h5> -->
-            <h2 class="fw-bold mb-0">Sign In</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
-              </div>
-              <button class="w-100 mb-1 btn btn-lg rounded-4 btn-primary" type="submit">Sign in</button>
-              <div class="or my-5">
-                <span class="bg-white px-2 fw-bold">OR</span>
-              </div>
-              <ul class="social mb-0 list-inline mt-3 text-center">
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt=""></a></li>
-              </ul>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-body text-center py-3">
-            Don't have an account?<a href="#" data-bs-target="#modalSignup" data-bs-toggle="modal" data-bs-dismiss="modal"> Sign up</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  ==================  -->
+      <div
+        class="modal fade py-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignin"
+        aria-labelledby="modalSigin"
+        aria-hidden=""
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h2 class="fw-bold mb-0">Sign In</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
 
-    <!-- Sign Up Modal -->
-    <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignup" aria-labelledby="modalSignup" aria-hidden="">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <h2 class="fw-bold mb-0">Sign Up</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-4"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button
+                  class="w-100 mb-1 btn btn-lg rounded-4 btn-primary"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+                <div class="or my-5">
+                  <span class="bg-white px-2 fw-bold">OR</span>
+                </div>
+                <ul class="social mb-0 list-inline mt-3 text-center">
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/facebook.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/instagram.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/twitter.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="Full Name" required>
-                <label for="floatingInput">Full Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Password</label>
-              </div>
-              <button class="w-100 mb-3 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
-              <small class="text-muted">By signing up, you agree to our <small class="fw-bold">Terms , Data Policy and Cookies Policy. </small></small>
-              <div class="or my-5">
-                <span class="bg-white px-2 fw-bold">OR</span>
-              </div>
-              <ul class="social mb-0 list-inline mt-3 text-center">
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt=""></a></li>
-                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt=""></a></li>
-              </ul>
-            </form>
+        </div>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-body text-center py-3">
+              Don't have an account?<a
+                href="#"
+                data-bs-target="#modalSignup"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Sign up</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-body text-center py-3">
-            Have an account?<a href="#" data-bs-target="#modalSignin" data-bs-toggle="modal" data-bs-dismiss="modal"> Log in</a>
+      <!--  ==================  -->
+
+      <!-- Sign Up Modal -->
+      <div
+        class="modal fade py-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignup"
+        aria-labelledby="modalSignup"
+        aria-hidden=""
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h2 class="fw-bold mb-0">Sign Up</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="floatingInput">Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-4"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button
+                  class="w-100 mb-3 btn btn-lg rounded-4 btn-primary"
+                  type="submit"
+                >
+                  Sign up
+                </button>
+                <small class="text-muted"
+                  >By signing up, you agree to our
+                  <small class="fw-bold"
+                    >Terms , Data Policy and Cookies Policy.
+                  </small></small
+                >
+                <div class="or my-5">
+                  <span class="bg-white px-2 fw-bold">OR</span>
+                </div>
+                <ul class="social mb-0 list-inline mt-3 text-center">
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/facebook.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/instagram.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="social-link"
+                      ><img src="../images/icon/twitter.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-body text-center py-3">
+              Have an account?<a
+                href="#"
+                data-bs-target="#modalSignin"
+                data-bs-toggle="modal"
+                data-bs-dismiss="modal"
+              >
+                Log in</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--  ==================  -->
+      <!--  ==================  -->
       <section
         id="konten-2"
         class="d-flex align-items-center justify-content-center"
@@ -300,15 +422,15 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Mt. Prau is an ancient mountain that is the forerunner of the Dieng city & Dieng Plateu. 
-              This mountain has a very extreme temperatures can even reach minus 5 degrees Celsius in the 
-              peak of the dry season (ranging from July to August). This mountain has a very beautiful scenery 
-              and is highly recommended for outdoor photography enthusiasts
+              Mt. Prau is an ancient mountain that is the forerunner of the
+              Dieng city & Dieng Plateu. This mountain has a very extreme
+              temperatures can even reach minus 5 degrees Celsius in the peak of
+              the dry season (ranging from July to August). This mountain has a
+              very beautiful scenery and is highly recommended for outdoor
+              photography enthusiasts
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $29.99
-              </li>
+              <li class="tag__itemm">$29.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -342,19 +464,20 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Mount Sumbing which sits at 3,371 meter above the sea level is the second highest 
-              volcano in Central Java. The mountain is considered as active volcanoes, whereby its 
-              peak consists of an 800 m wide crater which offers an amazing landscape a hillside of 
-              white rocks, steaming sulphur gases, bubbling water and mud pools and rivers of Sulphur 
-              – a view that you can enjoy from short distance upon summiting. Hikers can also enjoy a 
-              beautiful savanna and small sea of sand which located not far from the crater. This could 
-              be one good option for those who are looking for an easy to moderate volcano adventure 
-              and explore the hidden paradise of Central Java, Indonesia.
+              Mount Sumbing which sits at 3,371 meter above the sea level is the
+              second highest volcano in Central Java. The mountain is considered
+              as active volcanoes, whereby its peak consists of an 800 m wide
+              crater which offers an amazing landscape a hillside of white
+              rocks, steaming sulphur gases, bubbling water and mud pools and
+              rivers of Sulphur – a view that you can enjoy from short distance
+              upon summiting. Hikers can also enjoy a beautiful savanna and
+              small sea of sand which located not far from the crater. This
+              could be one good option for those who are looking for an easy to
+              moderate volcano adventure and explore the hidden paradise of
+              Central Java, Indonesia.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $29.99
-              </li>
+              <li class="tag__itemm">$29.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -392,15 +515,14 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Mount Bromo, which stands tall at 2329 m, is the most iconic and the most hiked mountain in Indonesia. 
-              This is one of the top 10 things to do in Java and rightly so. The mountain beckons majestically 
-              despite having the entire top blown off and with a crater inside that keeps spewing off-white 
-              sulfurous smoke.
+              Mount Bromo, which stands tall at 2329 m, is the most iconic and
+              the most hiked mountain in Indonesia. This is one of the top 10
+              things to do in Java and rightly so. The mountain beckons
+              majestically despite having the entire top blown off and with a
+              crater inside that keeps spewing off-white sulfurous smoke.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $29.99
-              </li>
+              <li class="tag__itemm">$29.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -440,17 +562,16 @@
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              The mighty Rinjani mountain of Gunung Rinjani is a massive volcano 
-              which towers over the island of Lombok. A climb to the top is one of 
-              the most exhilarating experiences you can have in Indonesia. 
-              At 3,726 meters tall, Gunung Rinjani is the second highest mountain in Indonesia. 
-              The climb to the top may not be easy but it’s worth it, and is widely regarded 
-              as one of the best views in the country.
+              The mighty Rinjani mountain of Gunung Rinjani is a massive volcano
+              which towers over the island of Lombok. A climb to the top is one
+              of the most exhilarating experiences you can have in Indonesia. At
+              3,726 meters tall, Gunung Rinjani is the second highest mountain
+              in Indonesia. The climb to the top may not be easy but it’s worth
+              it, and is widely regarded as one of the best views in the
+              country.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__itemm">
-                $29.99
-              </li>
+              <li class="tag__itemm">$29.99</li>
               <li class="tag__item">
                 <a
                   href=""
@@ -471,29 +592,65 @@
     <div class="container">
       <footer class="row row-col-sm-4 py-2 my-4">
         <div class="col-md mb-2 ps-5" data-aos="fade-up">
-          <a href="https://getbootstrap.com/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <img src="../images/logo-wide.png" height="50" alt="" loading="lazy"/>
+          <a
+            href="https://getbootstrap.com/"
+            class="
+              d-flex
+              align-items-center
+              mb-3
+              link-dark
+              text-decoration-none
+            "
+          >
+            <img
+              src="../images/logo-wide.png"
+              height="50"
+              alt=""
+              loading="lazy"
+            />
           </a>
-          <p class="text-muted small mt-2">Travel partner to your destination</p>
+          <p class="text-muted small mt-2">
+            Travel partner to your destination
+          </p>
         </div>
 
         <div class="col-md" data-aos="fade-up"></div>
-    
+
         <div class="col-md mb-3 ps-5" data-aos="fade-up">
           <h5>Section</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2 mt-1"><a href="../index.html" class="nav-link p-0 text-dark">Home</a></li>
-            <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-dark">Gallery</a></li>
-            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About</a></li>
+            <li class="nav-item mb-2 mt-1">
+              <a href="../index.html" class="nav-link p-0 text-dark">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="gallery.html" class="nav-link p-0 text-dark">Gallery</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link p-0 text-dark">About</a>
+            </li>
           </ul>
         </div>
-    
+
         <div class="col-md ps-5" data-aos="fade-up">
           <h5>Contact</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-3 mt-1"><a href="" class="text-muted"> <i class="fas fa-home me-3 text-muted"></i>  Jakarta, Indonesia</a></li>
-            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-envelope me-3 text-muted"></i>   contact@traveltoday.com</a></li>
-            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-phone me-3 text-muted"></i>   + 021 1122 0032</a></li>
+            <li class="nav-item mb-3 mt-1">
+              <a href="" class="text-muted">
+                <i class="fas fa-home me-3 text-muted"></i> Jakarta,
+                Indonesia</a
+              >
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-muted">
+                <i class="fas fa-envelope me-3 text-muted"></i>
+                contact@traveltoday.com</a
+              >
+            </li>
+            <li class="nav-item mb-3">
+              <a href="" class="text-muted">
+                <i class="fas fa-phone me-3 text-muted"></i> + 021 1122 0032</a
+              >
+            </li>
           </ul>
         </div>
       </footer>
@@ -502,22 +659,42 @@
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/github.svg" alt="github" width="24" height="24">
+              <img
+                src="../images/icon/github.svg"
+                alt="github"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/twitter.svg" alt="twitter" width="24" height="24">
+              <img
+                src="../images/icon/twitter.svg"
+                alt="twitter"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/instagram.svg" alt="instagram" width="24" height="24">
+              <img
+                src="../images/icon/instagram.svg"
+                alt="instagram"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
           <li class="ms-3">
             <a class="link-dark">
-              <img src="../images/icon/facebook.svg" alt="twitter" width="24" height="24">
+              <img
+                src="../images/icon/facebook.svg"
+                alt="twitter"
+                width="24"
+                height="24"
+              />
             </a>
           </li>
         </ul>
