@@ -59,6 +59,16 @@
                 Home
               </a>
             </li>
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destination
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="html/konten-1.html">Sea</a></li>
+                <li><a class="dropdown-item" href="html/konten-2.html">Mountain</a></li>
+                <li><a class="dropdown-item" href="html/konten-3.html">historical Site</a></li>
+              </ul>
+            </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="html/gallery.html">Gallery</a>
             </li>
@@ -106,7 +116,7 @@
           <div class="modal-content rounded-5 shadow">
             <div class="modal-header p-5 pb-4 border-bottom-0">
               <!-- <h5 class="modal-title">Modal title</h5> -->
-              <h2 class="fw-bold mb-0">Sign In</h2>
+              <h2 class="fw-bold mb-0">Log In</h2>
               <button
                 type="button"
                 class="btn-close"
@@ -141,7 +151,7 @@
                   class="w-100 mb-1 btn btn-lg rounded-4 btn-primary"
                   type="submit"
                 >
-                  Sign in
+                  Log in
                 </button>
                 <div class="or my-5">
                   <span class="bg-white px-2 fw-bold">OR</span>
@@ -170,7 +180,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 shadow">
             <div class="modal-body text-center py-3">
-              Don't have an account?<a href="#"> Sign up</a>
+              Don't have an account?<a href="#" data-bs-target="#modalSignup" data-bs-toggle="modal" data-bs-dismiss="modal"> Sign up</a>
             </div>
           </div>
         </div>
@@ -269,12 +279,13 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 shadow">
             <div class="modal-body text-center py-3">
-              Have an account?<a href="#"> Log in</a>
+              Have an account?<a href="#" data-bs-target="#modalSignin" data-bs-toggle="modal" data-bs-dismiss="modal"> Log in</a>
             </div>
           </div>
         </div>
       </div>
       <!--  ==================  -->
+
       <section
         id="hero"
         class="d-flex align-items-center justify-content-center"
@@ -285,13 +296,13 @@
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h1 class="fw-bold text-judul">Explore Indonesia</h1>
+            <h1 class="fw-bold text-judul">EXPLORE INDONESIA</h1>
             <p class="fw-normal text-p">
               Every particular in nature, a leaf, a drop, a crystal, a moment of
               time is related to the whole, and partakes of the perfection of
               the whole.
             </p>
-            <a class="btn btn-outline-light rounded-2" href="html/gallery.html">
+            <a class="btn btn-outline-light rounded-pill px-5 pb-2" href="#destination">
               Explore
             </a>
           </div>
@@ -300,6 +311,7 @@
 
       <div style="height: 200px"></div>
       <h1
+        id="destination"
         class="fw-bold text-center"
         data-aos="fade-up"
         data-aos-duration="600"
@@ -322,7 +334,7 @@
               Earth's surface.
             </p>
             <a
-              class="btn btn-outline-primary"
+              class="btn btn-outline-primary rounded-pill px-5 pb-2"
               href="html/konten-1.html"
               role="button"
             >
@@ -373,7 +385,7 @@
               with steep sides that show significant exposed bedrock.
             </p>
             <a
-              class="btn btn-outline-primary"
+              class="btn btn-outline-primary rounded-pill px-5 pb-2"
               href="html/konten-2.html"
               role="button"
             >
@@ -397,7 +409,7 @@
               been preserved due to their cultural heritage value.
             </p>
             <a
-              class="btn btn-outline-primary"
+              class="btn btn-outline-primary rounded-pill px-5 pb-2"
               href="html/konten-3.html"
               role="button"
             >
@@ -453,7 +465,7 @@
             <div class="author">
               <img class="rounded-circle" src="images/f2.jpg" />
               <h5 class="name">Carl Kent</h5>
-              <p class="title">Travel to Rinjani Mountain</p>
+              <p class="title">Travel to Kuta Beach</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 item">
@@ -465,128 +477,70 @@
             <div class="author">
               <img class="rounded-circle" src="images/f3.jpg" />
               <h5 class="name">Emily Clark</h5>
-              <p class="title">Travel to Pantai Kuta</p>
+              <p class="title">Travel to Mount Rinjani</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- FOOTER -->
-    <footer class="bd-footer bg-light">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-lg-3 mb-3">
-            <a
-              href="index.html"
-              class="
-                d-flex
-                align-items-center
-                mb-3
-                link-dark
-                text-decoration-none
-              "
-            >
-              <img
-                src="images/logo-wide.png"
-                height="40"
-                alt=""
-                loading="lazy"
-              />
-            </a>
-            <p class="text-muted small">Travel partner to your destination</p>
-          </div>
-
-          <div class="col-6 col-lg-3 offset-lg-3 mb-3">
-            <h5>Section</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="index.html" class="nav-link p-0 text-dark"> Home </a>
-              </li>
-              <li class="mb-2">
-                <a href="html/gallery.html" class="nav-link p-0 text-dark">
-                  Gallery
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="html/about.html" class="nav-link p-0 text-dark"
-                  >About</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-3">
-            <h5>Contact</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-home me-2 text-muted"></i>
-                  Jakarta, Indonesia
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-envelope me-2 text-muted"></i>
-                  contact@traveltoday.com
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-phone me-2 text-muted"></i>
-                  +021 1122 0032
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div class="container">
+      <footer class="row row-col-sm-4 py-2 my-4">
+        <div class="col-md mb-2 ps-5" data-aos="fade-up">
+          <a href="https://getbootstrap.com/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="images/logo-wide.png" height="50" alt="" loading="lazy"/>
+          </a>
+          <p class="text-muted small mt-2">Travel partner to your destination</p>
         </div>
 
-        <div class="d-flex justify-content-between py-4 mt-4 border-top">
-          © 2021 Travel Today, Inc. All rights reserved.
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="images/icon/github.svg"
-                  alt="github"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="images/icon/twitter.svg"
-                  alt="twitter"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="images/icon/instagram.svg"
-                  alt="instagram"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="images/icon/facebook.svg"
-                  alt="twitter"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
+        <div class="col-md" data-aos="fade-up"></div>
+    
+        <div class="col-md mb-3 ps-5" data-aos="fade-up">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-1"><a href="index.html" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-2"><a href="html/gallery.html" class="nav-link p-0 text-dark">Gallery</a></li>
+            <li class="nav-item mb-2"><a href="html/about.html" class="nav-link p-0 text-dark">About</a></li>
           </ul>
         </div>
+    
+        <div class="col-md ps-5" data-aos="fade-up">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3 mt-1"><a href="" class="text-muted"> <i class="fas fa-home me-3 text-muted"></i>  Jakarta, Indonesia</a></li>
+            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-envelope me-3 text-muted"></i>   contact@traveltoday.com</a></li>
+            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-phone me-3 text-muted"></i>   + 021 1122 0032</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="images/icon/github.svg" alt="github" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="images/icon/twitter.svg" alt="twitter" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="images/icon/instagram.svg" alt="instagram" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="images/icon/facebook.svg" alt="twitter" width="24" height="24">
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <!-- FOOTER -->
 
     <!-- Bootstrap -->
     <script

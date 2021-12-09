@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Historic Site</title>
+    <title>historical Site</title>
   </head>
   <body>
     <!-- Beli -->
@@ -57,9 +57,10 @@
                 <label for="select" class="form-label">Destination</label>
                 <select class="form-select" aria-label="select" required>
                   <option selected>Destination</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option value="1">Borobudur Temple</option>
+                  <option value="2">Prambanan Temple</option>
+                  <option value="3">Lawang Sewu</option>
+                  <option value="4">Gedung Sate</option>
                 </select>
               </div>
               <div class="col-md-4">
@@ -74,10 +75,11 @@
               </div>
               <div class="col-md-4">
                 <label for="validationCustomUsername" class="form-label"
-                  >Guest</label
+                  >
+                  Guest</label
                 >
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   id="guest"
                   placeholder="guest"
@@ -129,6 +131,16 @@
                 >Home</a
               >
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destination
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="konten-1.html">Sea</a></li>
+                <li><a class="dropdown-item" href="konten-2.html">Mountain</a></li>
+                <li><a class="dropdown-item" href="konten-3.html">historical Site</a></li>
+              </ul>
+            </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="../html/gallery.html">Gallery</a>
             </li>
@@ -163,6 +175,95 @@
     <!-- Navbar -->
 
     <main>
+      <!-- Sign In Modal -->
+    <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignin" aria-labelledby="modalSigin" aria-hidden="">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- <h5 class="modal-title">Modal title</h5> -->
+            <h2 class="fw-bold mb-0">Sign In</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-1 btn btn-lg rounded-4 btn-primary" type="submit">Sign in</button>
+              <div class="or my-5">
+                <span class="bg-white px-2 fw-bold">OR</span>
+              </div>
+              <ul class="social mb-0 list-inline mt-3 text-center">
+                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt=""></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt=""></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt=""></a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-body text-center py-3">
+            Don't have an account?<a href="#" data-bs-target="#modalSignup" data-bs-toggle="modal" data-bs-dismiss="modal"> Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  ==================  -->
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignup" aria-labelledby="modalSignup" aria-hidden="">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h2 class="fw-bold mb-0">Sign Up</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="Full Name" required>
+                <label for="floatingInput">Full Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-3 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+              <small class="text-muted">By signing up, you agree to our <small class="fw-bold">Terms , Data Policy and Cookies Policy. </small></small>
+              <div class="or my-5">
+                <span class="bg-white px-2 fw-bold">OR</span>
+              </div>
+              <ul class="social mb-0 list-inline mt-3 text-center">
+                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt=""></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt=""></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt=""></a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-body text-center py-3">
+            Have an account?<a href="#" data-bs-target="#modalSignin" data-bs-toggle="modal" data-bs-dismiss="modal"> Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  ==================  -->
       <section
         id="konten-3"
         class="d-flex align-items-center justify-content-center"
@@ -191,20 +292,15 @@
             />
           </a>
           <div class="postcard__text">
-            <h1 class="postcard__title blue">
-              <a href="" data-bs-toggle="modal" data-bs-target="#book"
-                >Candi Borobudur</a
-              >
-            </h1>
+            <h1 class="postcard__title blue"><a href="#">Borobudur Temple</a></h1>
             <div class="postcard__subtitle small">
               <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Magelang, Jawa Tengah
+                <i class="fas fa-map-marker"></i> Magelang, Central Jawa
               </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Borobudur, also transcribed Barabudur (Indonesian: Candi
-              Borobudur, romanized: Candhi Barabudhur) is a 7th-century Mahayana
+              Borobudur, also transcribed Barabudur is a 7th-century Mahayana
               Buddhist temple in Magelang Regency, not far from the town of
               Muntilan, in Central Java, Indonesia. It is the world's largest
               Buddhist temple. The temple consists of nine stacked platforms,
@@ -214,6 +310,9 @@
               inside a perforated stupa.
             </div>
             <ul class="postcard__tagbox">
+              <li class="tag__itemm">
+                $79.99
+              </li>
               <li class="tag__item">
                 <a
                   href=""
@@ -226,8 +325,6 @@
             </ul>
           </div>
         </article>
-
-        <!-- Postcard -->
         <article
           class="postcard dark blue"
           data-aos="zoom-in"
@@ -241,14 +338,10 @@
             />
           </a>
           <div class="postcard__text">
-            <h1 class="postcard__title blue">
-              <a href="" data-bs-toggle="modal" data-bs-target="#book"
-                >Candi Prambanan</a
-              >
-            </h1>
+            <h1 class="postcard__title blue"><a href="#">Prambanan Temple</a></h1>
             <div class="postcard__subtitle small">
               <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Yogyakarta, Jawa Tengah
+                <i class="fas fa-map-marker"></i> Province of the Yogyakarta Special Region
               </time>
             </div>
             <div class="postcard__bar"></div>
@@ -262,6 +355,9 @@
               boundary between Central Java and Yogyakarta provinces.
             </div>
             <ul class="postcard__tagbox">
+              <li class="tag__itemm">
+                $29.99
+              </li>
               <li class="tag__item">
                 <a
                   href=""
@@ -290,13 +386,11 @@
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue">
-              <a href="" data-bs-toggle="modal" data-bs-target="#book"
-                >Lawang Sewu</a
-              >
+              <a href="#">Lawang Sewu</a>
             </h1>
             <div class="postcard__subtitle small">
               <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Semarang, Jawa Tengah
+                <i class="fas fa-map-marker"></i> Semarang, Central Java
               </time>
             </div>
             <div class="postcard__bar"></div>
@@ -312,6 +406,9 @@
               Berlage.
             </div>
             <ul class="postcard__tagbox">
+              <li class="tag__itemm">
+                $29.99
+              </li>
               <li class="tag__item">
                 <a
                   href=""
@@ -346,124 +443,22 @@
             </h1>
             <div class="postcard__subtitle small">
               <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Bandung, Jawa Barat
+                <i class="fas fa-map-marker"></i> Bandung, West Java
               </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Gedung Sate is a public building in Bandung, West Java, Indonesia.
-              It was designed according to a neoclassical design incorporating
-              native Indonesian elements (such as Hindu-Buddhist elements) by
-              Dutch architect J. Gerber to be the seat of the Dutch East Indies
-              department of State Owned Enterprises (Departement van
-              Gouvernmentsbedrijven, literally "Department of Government
-              Industries"); the building was completed in 1920. Today, the
-              building serves as the seat of the governor of the province of
-              West Java, and also a museum.
+              Gedung Sate is the popular name for the governor's office of West Java province. 
+              It is one of the landmark buildings of Bandung and has become an icon for the city. 
+              It was designed by Dutch architect J.Gerber. Work on the building was began in 1920 
+              and it was completed in 1922. This massive structure is still an imposing sight today. 
+              It is the centrepiece of a large complex of government buildings set on a public square. 
+              It is one of the most magnificent colonial buildings in all Indonesia.
             </div>
             <ul class="postcard__tagbox">
-              <li class="tag__item">
-                <a
-                  href=""
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#book"
-                  ><i class="fas fa-shopping-basket"></i> Book Now</a
-                >
+              <li class="tag__itemm">
+                $79.99
               </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Postcard -->
-        <article
-          class="postcard dark blue"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <a class="postcard__img_link" href="#">
-            <img
-              class="postcard__img"
-              src="../images/konten-3/benteng vredeburg.jpg"
-              alt="Image Title"
-            />
-          </a>
-          <div class="postcard__text">
-            <h1 class="postcard__title blue">
-              <a href="" data-bs-toggle="modal" data-bs-target="#book"
-                >Museum Benteng Vredeburg</a
-              >
-            </h1>
-            <div class="postcard__subtitle small">
-              <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Yogyakarta, Jawa Tengah
-              </time>
-            </div>
-            <div class="postcard__bar"></div>
-            <div class="postcard__preview-txt">
-              Fort Vredeburg Museum (official name: Museum Benteng Vredeburg
-              Yogyakarta) was a former colonial fortress located in the city of
-              Yogyakarta. The military complex has been converted into a museum
-              of the Indonesian independence struggle which was opened in 1992.
-              It is located in front of Gedung Agung and near the Kraton
-              Yogyakarta (Sultan's Palace). The museum includes collections of
-              old photographs, historical objects and replicas. A diorama
-              portraying Indonesia's journey for independence is also displayed
-              in the museum.
-            </div>
-            <ul class="postcard__tagbox">
-              <li class="tag__item">
-                <a
-                  href=""
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#book"
-                  ><i class="fas fa-shopping-basket"></i> Book Now</a
-                >
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Postcard -->
-        <article
-          class="postcard dark blue"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <a class="postcard__img_link" href="#">
-            <img
-              class="postcard__img"
-              src="../images/konten-2/gunung-prau.jpeg"
-              alt="Image Title"
-            />
-          </a>
-          <div class="postcard__text">
-            <h1 class="postcard__title blue">
-              <a href="" data-bs-toggle="modal" data-bs-target="#book"
-                >Gunung Prau</a
-              >
-            </h1>
-            <div class="postcard__subtitle small">
-              <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Dieng, Jawa Tengah
-              </time>
-            </div>
-            <div class="postcard__bar"></div>
-            <div class="postcard__preview-txt">
-              Gunung Prahu (terkadang dieja Gunung Prau) (2.590 mdpl) terletak
-              di kawasan Dataran Tinggi Dieng, Jawa Tengah, Indonesia. Gunung
-              Prahu terletak pada koordinat 7°11′13″S 109°55′22″E. Gunung Prahu
-              merupakan tapal batas antara empat kabupaten yaitu Kabupaten
-              Batang, Kabupaten Kendal, Kabupaten Temanggung dan Kabupaten
-              Wonosobo. Puncak Gunung Prahu merupakan padang rumput luas yang
-              memanjang dari barat ke timur. Bukit-bukit kecil dan sabana dengan
-              sedikit pepohonan dapat kita jumpai di puncak. Gunung Prahu
-              merupakan puncak tertinggi di kawasan Dataran Tinggi Dieng, dengan
-              beberapa puncak yang lebih rendah di sekitarnya, antara lain
-              Gunung Sipandu, Gunung Pangamun-amun, dan Gunung Juranggrawah.
-            </div>
-            <ul class="postcard__tagbox">
               <li class="tag__item">
                 <a
                   href=""
@@ -477,126 +472,66 @@
           </div>
         </article>
       </div>
-
       <div class="container" style="height: 100px"></div>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bd-footer mt-5 bg-light">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-lg-3 mb-3">
-            <a
-              href="../index.html"
-              class="
-                d-flex
-                align-items-center
-                mb-3
-                link-dark
-                text-decoration-none
-              "
-            >
-              <img
-                src="../images/logo-wide.png"
-                height="40"
-                alt=""
-                loading="lazy"
-              />
-            </a>
-            <p class="text-muted small">Travel partner to your destination</p>
-          </div>
-
-          <div class="col-6 col-lg-3 offset-lg-3 mb-3">
-            <h5>Section</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="../index.html" class="nav-link p-0 text-dark">
-                  Home
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="gallery.html" class="nav-link p-0 text-dark">
-                  Gallery
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="about.html" class="nav-link p-0 text-dark">About</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-3">
-            <h5>Contact</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-home me-2 text-muted"></i>
-                  Jakarta Selatan, Indonesia
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-envelope me-2 text-muted"></i>
-                  contact@traveltoday.com
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-phone me-2 text-muted"></i>
-                  +021 1122 0032
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div class="container">
+      <footer class="row row-col-sm-4 py-2 my-4">
+        <div class="col-md mb-2 ps-5" data-aos="fade-up">
+          <a href="https://getbootstrap.com/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="../images/logo-wide.png" height="50" alt="" loading="lazy"/>
+          </a>
+          <p class="text-muted small mt-2">Travel partner to your destination</p>
         </div>
 
-        <div class="d-flex justify-content-between py-4 mt-4 border-top">
-          © 2021 Travel Today, Inc. All rights reserved.
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/github.svg"
-                  alt="github"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/twitter.svg"
-                  alt="twitter"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/instagram.svg"
-                  alt="instagram"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/facebook.svg"
-                  alt="twitter"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
+        <div class="col-md" data-aos="fade-up"></div>
+    
+        <div class="col-md mb-3 ps-5" data-aos="fade-up">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-1"><a href="../index.html" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-dark">Gallery</a></li>
+            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About</a></li>
           </ul>
         </div>
+    
+        <div class="col-md ps-5" data-aos="fade-up">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3 mt-1"><a href="" class="text-muted"> <i class="fas fa-home me-3 text-muted"></i>  Jakarta, Indonesia</a></li>
+            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-envelope me-3 text-muted"></i>   contact@traveltoday.com</a></li>
+            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-phone me-3 text-muted"></i>   + 021 1122 0032</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/github.svg" alt="github" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/twitter.svg" alt="twitter" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/instagram.svg" alt="instagram" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/facebook.svg" alt="twitter" width="24" height="24">
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <!-- FOOTER -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

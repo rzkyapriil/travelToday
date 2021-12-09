@@ -54,7 +54,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-5 shadow">
           <div class="modal-body text-center py-3">
-            Don't have an account?<a href="#"> Sign up</a>
+            Don't have an account?<a href="#" data-bs-target="#modalSignup" data-bs-toggle="modal" data-bs-dismiss="modal"> Sign up</a>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-5 shadow">
           <div class="modal-body text-center py-3">
-            Have an account?<a href="#"> Log in</a>
+            Have an account?<a href="#" data-bs-target="#modalSignin" data-bs-toggle="modal" data-bs-dismiss="modal"> Log in</a>
           </div>
         </div>
       </div>
@@ -122,6 +122,16 @@
           <ul class="navbar-nav mx-auto justify-center mb-2 mb-lg-0">
               <li class="nav-item mx-2">
                   <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="konten-1.html">Sea</a></li>
+                  <li><a class="dropdown-item" href="konten-2.html">Mountain</a></li>
+                  <li><a class="dropdown-item" href="konten-3.html">historical Site</a></li>
+                </ul>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link active" href="gallery.html">Gallery</a>
@@ -149,7 +159,7 @@
       <div class="container py-5" data-aos="zoom-in" data-aos-duration="1000"> 
         <div class="row text-center text-dark">
             <div class="col-lg-8 mx-auto">
-                <h1 class="display-4">Our Gallery</h1>
+                <h1 class="display-4">Gallery</h1>
                 <p class="lead mb-0">We Record Memories</p>
             </div>
         </div>
@@ -209,121 +219,63 @@
         </div>
     </div>
 
-    <footer class="bd-footer mt-5 bg-light">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-lg-3 mb-3">
-            <a
-              href="../index.html"
-              class="
-                d-flex
-                align-items-center
-                mb-3
-                link-dark
-                text-decoration-none
-              "
-            >
-              <img
-                src="../images/logo-wide.png"
-                height="40"
-                alt=""
-                loading="lazy"
-              />
-            </a>
-            <p class="text-muted small">Travel partner to your destination</p>
-          </div>
-
-          <div class="col-6 col-lg-3 offset-lg-3 mb-3">
-            <h5>Section</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="../index.html" class="nav-link p-0 text-dark"> Home </a>
-              </li>
-              <li class="mb-2">
-                <a href="gallery.html" class="nav-link p-0 text-dark">
-                  Gallery
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="about.html" class="nav-link p-0 text-dark"
-                  >About</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-lg-3 mb-3">
-            <h5>Contact</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-home me-2 text-muted"></i>
-                  Jakarta Selatan, Indonesia
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-envelope me-2 text-muted"></i>
-                  contact@traveltoday.com
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="" class="text-muted">
-                  <i class="fas fa-phone me-2 text-muted"></i>
-                  +021 1122 0032
-                </a>
-              </li>
-            </ul>
-          </div>
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="row row-col-sm-4 py-2 my-4">
+        <div class="col-md mb-2 ps-5" data-aos="fade-up">
+          <a href="https://getbootstrap.com/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="../images/logo-wide.png" height="50" alt="" loading="lazy"/>
+          </a>
+          <p class="text-muted small mt-2">Travel partner to your destination</p>
         </div>
 
-        <div class="d-flex justify-content-between py-4 mt-4 border-top">
-          © 2021 Travel Today, Inc. All rights reserved.
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/github.svg"
-                  alt="github"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/twitter.svg"
-                  alt="twitter"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/instagram.svg"
-                  alt="instagram"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <img
-                  src="../images/icon/facebook.svg"
-                  alt="twitter"
-                  width="24"
-                  height="24"
-                />
-              </a>
-            </li>
+        <div class="col-md" data-aos="fade-up"></div>
+    
+        <div class="col-md mb-3 ps-5" data-aos="fade-up">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-1"><a href="../index.html" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-dark">Gallery</a></li>
+            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-dark">About</a></li>
           </ul>
         </div>
+    
+        <div class="col-md ps-5" data-aos="fade-up">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3 mt-1"><a href="" class="text-muted"> <i class="fas fa-home me-3 text-muted"></i>  Jakarta, Indonesia</a></li>
+            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-envelope me-3 text-muted"></i>   contact@traveltoday.com</a></li>
+            <li class="nav-item mb-3"><a href="" class="text-muted"> <i class="fas fa-phone me-3 text-muted"></i>   + 021 1122 0032</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/github.svg" alt="github" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/twitter.svg" alt="twitter" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/instagram.svg" alt="instagram" width="24" height="24">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark">
+              <img src="../images/icon/facebook.svg" alt="twitter" width="24" height="24">
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <!-- FOOTER -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
