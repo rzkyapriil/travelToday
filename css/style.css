@@ -75,7 +75,7 @@ a {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/landing.jpg") top center;
+  background: url("../images/b6.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -85,7 +85,8 @@ a {
 }
 
 .text-p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: rgb(224, 224, 224);
 }
 
 .testimonials-clean {
