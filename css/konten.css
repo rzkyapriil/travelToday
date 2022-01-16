@@ -17,8 +17,7 @@ body {
 #konten-2 {
   width: 100%;
   height: 50vh;
-  background: url("https://cutewallpaper.org/21/wallpaper-indonesia/Java-Indonesia-Wallpaper-Indonesia-Java-4k-Ultra-Hd-.jpg")
-    top center;
+  background: url("https://cutewallpaper.org/21/wallpaper-indonesia/Java-Indonesia-Wallpaper-Indonesia-Java-4k-Ultra-Hd-.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -26,8 +25,7 @@ body {
 #konten-3 {
   width: 100%;
   height: 50vh;
-  background: url("../images/prambanan.jpg")
-    top center;
+  background: url("../images/prambanan.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -222,7 +220,7 @@ a:hover {
     display: block;
     top: -20%;
     height: 130%;
-    width: 55px;
+    width: 50px;
   }
 
   .postcard.dark .postcard__text:before {
@@ -248,19 +246,11 @@ a:hover {
 }
 
 .green::before {
-  background-image: linear-gradient(
-    -30deg,
-    rgba(121, 221, 9, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
 }
 
 .green:nth-child(2n)::before {
-  background-image: linear-gradient(
-    30deg,
-    rgba(121, 221, 9, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
 }
 
 .postcard .postcard__tagbox .blue.play:hover {
@@ -276,19 +266,11 @@ a:hover {
 }
 
 .blue::before {
-  background-image: linear-gradient(
-    -30deg,
-    rgba(0, 118, 189, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
 }
 
 .blue:nth-child(2n)::before {
-  background-image: linear-gradient(
-    30deg,
-    rgba(0, 118, 189, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
 }
 
 .postcard .postcard__tagbox .red.play:hover {
@@ -304,19 +286,11 @@ a:hover {
 }
 
 .red::before {
-  background-image: linear-gradient(
-    -30deg,
-    rgba(189, 21, 11, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
 }
 
 .red:nth-child(2n)::before {
-  background-image: linear-gradient(
-    30deg,
-    rgba(189, 21, 11, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
 }
 
 .postcard .postcard__tagbox .yellow.play:hover {
@@ -333,84 +307,44 @@ a:hover {
 }
 
 .yellow::before {
-  background-image: linear-gradient(
-    -30deg,
-    rgba(189, 187, 73, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
 }
 
 .yellow:nth-child(2n)::before {
-  background-image: linear-gradient(
-    30deg,
-    rgba(189, 187, 73, 0.1),
-    transparent 50%
-  );
+  background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
 }
 
 @media screen and (min-width: 769px) {
   .green::before {
-    background-image: linear-gradient(
-      -80deg,
-      rgba(121, 221, 9, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
   }
 
   .green:nth-child(2n)::before {
-    background-image: linear-gradient(
-      80deg,
-      rgba(121, 221, 9, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
   }
 
   .blue::before {
-    background-image: linear-gradient(
-      -80deg,
-      rgba(0, 118, 189, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
   }
 
   .blue:nth-child(2n)::before {
-    background-image: linear-gradient(
-      80deg,
-      rgba(0, 118, 189, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
   }
 
   .red::before {
-    background-image: linear-gradient(
-      -80deg,
-      rgba(189, 21, 11, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
   }
 
   .red:nth-child(2n)::before {
-    background-image: linear-gradient(
-      80deg,
-      rgba(189, 21, 11, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
   }
 
   .yellow::before {
-    background-image: linear-gradient(
-      -80deg,
-      rgba(189, 187, 73, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 
   .yellow:nth-child(2n)::before {
-    background-image: linear-gradient(
-      80deg,
-      rgba(189, 187, 73, 0.1),
-      transparent 50%
-    );
+    background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 }
 

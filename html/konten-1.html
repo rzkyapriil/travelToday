@@ -6,23 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../images/icon/favicon.ico" />
     <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-      crossorigin="anonymous"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/konten.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <!-- AOS -->
@@ -31,24 +18,12 @@
   </head>
   <body>
     <!-- Beli -->
-    <div
-      class="modal fade py-5"
-      tabindex="-1"
-      role="dialog"
-      id="book"
-      aria-labelledby="book"
-      aria-hidden=""
-    >
+    <div class="modal fade py-5" tabindex="-1" role="dialog" id="book" aria-labelledby="book" aria-hidden="">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content rounded-5 shadow">
           <div class="modal-header p-5 pb-3 border-bottom-0">
             <h2 class="fw-bold mb-0 text-dark">Book Now</h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
           <div class="modal-body p-4 pt-0">
@@ -65,94 +40,47 @@
               </div>
               <div class="col-md-4">
                 <label for="text" class="form-label">Date</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="date"
-                  placeholder="date"
-                  required
-                />
+                <input type="date" class="form-control" id="date" placeholder="date" required />
               </div>
               <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">
-                  Guest</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="guest"
-                  placeholder="guest"
-                  required
-                />
+                <label for="validationCustomUsername" class="form-label"> Guest</label>
+                <input type="number" class="form-control" id="guest" placeholder="guest" required />
               </div>
             </form>
           </div>
 
           <div class="modal-footer mt-4">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-            >
-              Submit
-            </button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
           </div>
         </div>
       </div>
     </div>
     <!--  ==================  -->
     <!-- Navbar -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light bg-light d-lg-block"
-      style="z-index: 200"
-    >
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light d-lg-block" style="z-index: 200">
       <div class="container-fluid card-deck">
         <!-- Navbar logo -->
         <a class="navbar-brand nav-link ms-4" href="../index.html">
           <img src="../images/logo.png" height="35" alt="" loading="lazy" />
         </a>
         <!-- Navbar toggle responsive -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse ms-3" id="navbarNav">
           <ul class="navbar-nav mx-auto justify-center mb-2 mb-lg-0">
             <li class="nav-item mx-2">
-              <a class="nav-link" aria-current="page" href="../index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item dropdown mx-2">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarLightDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Destination
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-light"
-                aria-labelledby="navbarLightDropdownMenuLink"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Destination </a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                 <li><a class="dropdown-item" href="konten-1.html">Sea</a></li>
                 <li>
                   <a class="dropdown-item" href="konten-2.html">Mountain</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="konten-3.html"
-                    >Historical Site</a
-                  >
+                  <a class="dropdown-item" href="konten-3.html">Historical Site</a>
                 </li>
               </ul>
             </li>
@@ -165,24 +93,8 @@
           </ul>
           <!-- Right links -->
           <div class="d-flex align-items-center me-5">
-            <a
-              href=""
-              type="button"
-              class="btn btn-outline-dark me-3"
-              data-bs-toggle="modal"
-              data-bs-target="#modalSignin"
-            >
-              Login</a
-            >
-            <a
-              href=""
-              type="button"
-              class="btn btn-dark me-3"
-              data-bs-toggle="modal"
-              data-bs-target="#modalSignup"
-            >
-              Sign Up</a
-            >
+            <a href="" type="button" class="btn btn-outline-dark me-3" data-bs-toggle="modal" data-bs-target="#modalSignin"> Login</a>
+            <a href="" type="button" class="btn btn-dark me-3" data-bs-toggle="modal" data-bs-target="#modalSignup"> Sign Up</a>
           </div>
         </div>
       </div>
@@ -191,73 +103,38 @@
 
     <main>
       <!-- Sign In Modal -->
-      <div
-        class="modal fade py-5"
-        tabindex="-1"
-        role="dialog"
-        id="modalSignin"
-        aria-labelledby="modalSigin"
-        aria-hidden=""
-      >
+      <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignin" aria-labelledby="modalSigin" aria-hidden="">
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 shadow">
             <div class="modal-header p-5 pb-4 border-bottom-0">
               <!-- <h5 class="modal-title">Modal title</h5> -->
               <h2 class="fw-bold mb-0">Sign In</h2>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body p-5 pt-0">
               <form class="">
                 <div class="form-floating mb-3">
-                  <input
-                    type="email"
-                    class="form-control rounded-4"
-                    id="floatingInput"
-                    placeholder="name@example.com"
-                    required
-                  />
+                  <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required />
                   <label for="floatingInput">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input
-                    type="password"
-                    class="form-control rounded-4"
-                    id="floatingPassword"
-                    placeholder="Password"
-                    required
-                  />
+                  <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required />
                   <label for="floatingPassword">Password</label>
                 </div>
-                <button
-                  class="w-100 mb-1 btn btn-lg rounded-4 btn-primary"
-                  type="submit"
-                >
-                  Sign in
-                </button>
+                <button class="w-100 mb-1 btn btn-lg rounded-4 btn-primary" type="submit">Sign in</button>
                 <div class="or my-5">
                   <span class="bg-white px-2 fw-bold">OR</span>
                 </div>
                 <ul class="social mb-0 list-inline mt-3 text-center">
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="../images/icon/facebook.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt="" /></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="../images/icon/instagram.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt="" /></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="../images/icon/twitter.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt="" /></a>
                   </li>
                 </ul>
               </form>
@@ -266,104 +143,49 @@
         </div>
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 shadow">
-            <div class="modal-body text-center py-3">
-              Don't have an account?<a
-                href="#"
-                data-bs-target="#modalSignup"
-                data-bs-toggle="modal"
-                data-bs-dismiss="modal"
-              >
-                Sign up</a
-              >
-            </div>
+            <div class="modal-body text-center py-3">Don't have an account?<a href="#" data-bs-target="#modalSignup" data-bs-toggle="modal" data-bs-dismiss="modal"> Sign up</a></div>
           </div>
         </div>
       </div>
       <!--  ==================  -->
 
       <!-- Sign Up Modal -->
-      <div
-        class="modal fade py-5"
-        tabindex="-1"
-        role="dialog"
-        id="modalSignup"
-        aria-labelledby="modalSignup"
-        aria-hidden=""
-      >
+      <div class="modal fade py-5" tabindex="-1" role="dialog" id="modalSignup" aria-labelledby="modalSignup" aria-hidden="">
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 shadow">
             <div class="modal-header p-5 pb-4 border-bottom-0">
               <h2 class="fw-bold mb-0">Sign Up</h2>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body p-5 pt-0">
               <form class="">
                 <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control rounded-4"
-                    id="floatingInput"
-                    placeholder="Full Name"
-                    required
-                  />
+                  <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="Full Name" required />
                   <label for="floatingInput">Full Name</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input
-                    type="email"
-                    class="form-control rounded-4"
-                    id="floatingInput"
-                    placeholder="name@example.com"
-                    required
-                  />
+                  <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" required />
                   <label for="floatingInput">Email</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input
-                    type="password"
-                    class="form-control rounded-4"
-                    id="floatingPassword"
-                    placeholder="Password"
-                    required
-                  />
+                  <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required />
                   <label for="floatingPassword">Password</label>
                 </div>
-                <button
-                  class="w-100 mb-3 btn btn-lg rounded-4 btn-primary"
-                  type="submit"
-                >
-                  Sign up
-                </button>
-                <small class="text-muted"
-                  >By signing up, you agree to our
-                  <small class="fw-bold"
-                    >Terms , Data Policy and Cookies Policy.
-                  </small></small
-                >
+                <button class="w-100 mb-3 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+                <small class="text-muted">By signing up, you agree to our <small class="fw-bold">Terms , Data Policy and Cookies Policy. </small></small>
                 <div class="or my-5">
                   <span class="bg-white px-2 fw-bold">OR</span>
                 </div>
                 <ul class="social mb-0 list-inline mt-3 text-center">
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="../images/icon/facebook.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link"><img src="../images/icon/facebook.svg" alt="" /></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="../images/icon/instagram.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link"><img src="../images/icon/instagram.svg" alt="" /></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#" class="social-link"
-                      ><img src="../images/icon/twitter.svg" alt=""
-                    /></a>
+                    <a href="#" class="social-link"><img src="../images/icon/twitter.svg" alt="" /></a>
                   </li>
                 </ul>
               </form>
@@ -372,24 +194,12 @@
         </div>
         <div class="modal-dialog" role="document">
           <div class="modal-content rounded-5 shadow">
-            <div class="modal-body text-center py-3">
-              Have an account?<a
-                href="#"
-                data-bs-target="#modalSignin"
-                data-bs-toggle="modal"
-                data-bs-dismiss="modal"
-              >
-                Log in</a
-              >
-            </div>
+            <div class="modal-body text-center py-3">Have an account?<a href="#" data-bs-target="#modalSignin" data-bs-toggle="modal" data-bs-dismiss="modal"> Log in</a></div>
           </div>
         </div>
       </div>
       <!--  ==================  -->
-      <section
-        id="konten-1"
-        class="d-flex align-items-center justify-content-center"
-      >
+      <section id="konten-1" class="d-flex align-items-center justify-content-center">
         <div class="position-relative">
           <div class="container position-relative text-white text-center">
             <h1 class="fw-bold text-judul">Sea</h1>
@@ -401,188 +211,101 @@
 
       <div class="container">
         <!-- Postcard -->
-        <article
-          class="postcard dark blue"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
+        <article class="postcard dark blue" data-aos="zoom-in" data-aos-duration="1000">
           <a class="postcard__img_link" href="#">
-            <img
-              class="postcard__img"
-              src="../images/rajaampat.jpg"
-              alt="Raja Ampat"
-            />
+            <img class="postcard__img" src="../images/rajaampat.jpg" alt="Raja Ampat" />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue"><a href="#">Raja Ampat</a></h1>
             <div class="postcard__subtitle small">
-              <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Province Papua Barat
-              </time>
+              <time datetime="2020-05-25 12:00:00"> <i class="fas fa-map-marker"></i> Province Papua Barat </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Raja Ampat is one of the world’s last wild places. A vast sprawl
-              of tropical island jewels amid seas renowned as being the richest
-              on our planet. A nursery and refuge for coral and fish species
-              that are rapidly disappearing from elsewhere in the region, and
-              the perfect place to really get away from it all.
+              Raja Ampat is one of the world’s last wild places. A vast sprawl of tropical island jewels amid seas renowned as being the richest on our planet. A nursery and refuge for coral and fish species that are rapidly disappearing
+              from elsewhere in the region, and the perfect place to really get away from it all.
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__itemm">$79.99</li>
               <li class="tag__item">
-                <a
-                  href=""
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#book"
-                  ><i class="fas fa-shopping-basket"></i> Book Now</a
-                >
+                <a href="" type="button" data-bs-toggle="modal" data-bs-target="#book"><i class="fas fa-shopping-basket"></i> Book Now</a>
               </li>
             </ul>
           </div>
         </article>
-        <article
-          class="postcard dark blue"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
+        <article class="postcard dark blue" data-aos="zoom-in" data-aos-duration="1000">
           <a class="postcard__img_link" href="#">
-            <img
-              class="postcard__img"
-              src="../images/kuta-beach.jpg"
-              alt="Kuta Beach"
-            />
+            <img class="postcard__img" src="../images/kuta-beach.jpg" alt="Kuta Beach" />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue"><a href="#">Kuta Beach</a></h1>
             <div class="postcard__subtitle small">
-              <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Kuta
-              </time>
+              <time datetime="2020-05-25 12:00:00"> <i class="fas fa-map-marker"></i> Kuta </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Kuta Beach Bali is also an international tourist destination
-              supported by the complete public facilities such as hotels, bars,
-              restaurants, night club, souvenir shops, best shopping center,
-              entertainments etc. This beach is suitable as a place for play
-              around with family, relax, swim, and surf. This beach has good
-              wave for bali activities as surfing including surf lesson where
-              the beginner surfer up to professional have ever experienced. The
-              beauty of Kuta Beach Bali is complemented by the spectacular
-              sunset that creates the romantic nuance that alluring every
-              visitor.
+              Kuta Beach Bali is also an international tourist destination supported by the complete public facilities such as hotels, bars, restaurants, night club, souvenir shops, best shopping center, entertainments etc. This beach is
+              suitable as a place for play around with family, relax, swim, and surf. This beach has good wave for bali activities as surfing including surf lesson where the beginner surfer up to professional have ever experienced. The
+              beauty of Kuta Beach Bali is complemented by the spectacular sunset that creates the romantic nuance that alluring every visitor.
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__itemm">$69.99</li>
               <li class="tag__item">
-                <a
-                  href=""
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#book"
-                  ><i class="fas fa-shopping-basket"></i> Book Now</a
-                >
+                <a href="" type="button" data-bs-toggle="modal" data-bs-target="#book"><i class="fas fa-shopping-basket"></i> Book Now</a>
               </li>
             </ul>
           </div>
         </article>
 
         <!-- Postcard -->
-        <article
-          class="postcard dark blue"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
+        <article class="postcard dark blue" data-aos="zoom-in" data-aos-duration="1000">
           <a class="postcard__img_link" href="#">
-            <img
-              class="postcard__img"
-              src="../images/parangtritis.jpg"
-              alt="Parangtritis Beach"
-            />
+            <img class="postcard__img" src="../images/parangtritis.jpg" alt="Parangtritis Beach" />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue">
               <a href="#">Parangtritis Beach</a>
             </h1>
             <div class="postcard__subtitle small">
-              <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> Province of the Yogyakarta
-                Special Region
-              </time>
+              <time datetime="2020-05-25 12:00:00"> <i class="fas fa-map-marker"></i> Province of the Yogyakarta Special Region </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Parangtritis Beach is a lovely beach with many impressing
-              phenomena, naturally and supra naturally. The waves regularly
-              bring in new wood and bamboo, washing ashore from another nearby
-              beach probably. Some wood is picked and taken away by locals to be
-              used for their own house. Parangtritis is an enchanting sloping
-              beach combined with rocky hills, dunes, and a white sandy beach.
-              Besides being famous as a recreational spot. Parangtritis is also
-              a sacred place. Many people come to the beach to do meditation. Up
-              to now, this area is remaining functioned as the place to perform
-              the traditional ceremony called labuhan. Many hotels and
-              restaurants are available for sunbathe lovers.
+              Parangtritis Beach is a lovely beach with many impressing phenomena, naturally and supra naturally. The waves regularly bring in new wood and bamboo, washing ashore from another nearby beach probably. Some wood is picked and
+              taken away by locals to be used for their own house. Parangtritis is an enchanting sloping beach combined with rocky hills, dunes, and a white sandy beach. Besides being famous as a recreational spot. Parangtritis is also a
+              sacred place. Many people come to the beach to do meditation. Up to now, this area is remaining functioned as the place to perform the traditional ceremony called labuhan. Many hotels and restaurants are available for sunbathe
+              lovers.
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__itemm">$29.99</li>
               <li class="tag__item">
-                <a
-                  href=""
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#book"
-                  ><i class="fas fa-shopping-basket"></i> Book Now</a
-                >
+                <a href="" type="button" data-bs-toggle="modal" data-bs-target="#book"><i class="fas fa-shopping-basket"></i> Book Now</a>
               </li>
             </ul>
           </div>
         </article>
 
         <!-- Postcard -->
-        <article
-          class="postcard dark blue"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
+        <article class="postcard dark blue" data-aos="zoom-in" data-aos-duration="1000">
           <a class="postcard__img_link" href="#">
-            <img
-              class="postcard__img"
-              src="../images/konten-1/wisatalautbunaken.jpg"
-              alt="Bunaken"
-            />
+            <img class="postcard__img" src="../images/konten-1/wisatalautbunaken.jpg" alt="Bunaken" />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue">
-              <a href="" data-bs-toggle="modal" data-bs-target="#book"
-                >Bunaken</a
-              >
+              <a href="" data-bs-toggle="modal" data-bs-target="#book">Bunaken</a>
             </h1>
             <div class="postcard__subtitle small">
-              <time datetime="2020-05-25 12:00:00">
-                <i class="fas fa-map-marker"></i> North Sulawesi
-              </time>
+              <time datetime="2020-05-25 12:00:00"> <i class="fas fa-map-marker"></i> North Sulawesi </time>
             </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">
-              Bunaken is an island of 8 km2, part of the Bunaken National Marine
-              Park. Bunaken is located at the northern tip of the island of
-              Sulawesi, Indonesia. It belongs administratively to the
-              municipality of Manado. Scuba diving attracts many visitors to the
-              island.
+              Bunaken is an island of 8 km2, part of the Bunaken National Marine Park. Bunaken is located at the northern tip of the island of Sulawesi, Indonesia. It belongs administratively to the municipality of Manado. Scuba diving
+              attracts many visitors to the island.
             </div>
             <ul class="postcard__tagbox">
               <li class="tag__itemm">$79.99</li>
               <li class="tag__item">
-                <a
-                  href=""
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#book"
-                  ><i class="fas fa-shopping-basket"></i> Book Now</a
-                >
+                <a href="" type="button" data-bs-toggle="modal" data-bs-target="#book"><i class="fas fa-shopping-basket"></i> Book Now</a>
               </li>
             </ul>
           </div>
@@ -595,26 +318,10 @@
     <div class="container">
       <footer class="row row-col-sm-4 py-2 my-4">
         <div class="col-md mb-2 ps-5" data-aos="fade-up">
-          <a
-            href="https://getbootstrap.com/"
-            class="
-              d-flex
-              align-items-center
-              mb-3
-              link-dark
-              text-decoration-none
-            "
-          >
-            <img
-              src="../images/logo-wide.png"
-              height="50"
-              alt=""
-              loading="lazy"
-            />
+          <a href="../index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="../images/logo-wide.png" height="50" alt="" loading="lazy" />
           </a>
-          <p class="text-muted small mt-2">
-            Travel partner to your destination
-          </p>
+          <p class="text-muted small mt-2">Travel partner to your destination</p>
         </div>
 
         <div class="col-md" data-aos="fade-up"></div>
@@ -638,10 +345,7 @@
           <h5>Contact</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-3 mt-1">
-              <a href="" class="text-muted">
-                <i class="fas fa-home me-3 text-muted"></i> Jakarta,
-                Indonesia</a
-              >
+              <a href="" class="text-muted"> <i class="fas fa-home me-3 text-muted"></i> Jakarta, Indonesia</a>
             </li>
             <li class="nav-item mb-3">
               <a href="" class="text-muted">
@@ -650,9 +354,7 @@
               >
             </li>
             <li class="nav-item mb-3">
-              <a href="" class="text-muted">
-                <i class="fas fa-phone me-3 text-muted"></i> + 021 1122 0032</a
-              >
+              <a href="" class="text-muted"> <i class="fas fa-phone me-3 text-muted"></i> + 021 1122 0032</a>
             </li>
           </ul>
         </div>
@@ -661,43 +363,23 @@
         <p>© 2021 Company, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
-            <a class="link-dark">
-              <img
-                src="../images/icon/github.svg"
-                alt="github"
-                width="24"
-                height="24"
-              />
+            <a class="link-dark" href="https://github.com/rzkyapriil/travelToday">
+              <img src="images/icon/github.svg" alt="github" width="24" height="24" />
             </a>
           </li>
           <li class="ms-3">
-            <a class="link-dark">
-              <img
-                src="../images/icon/twitter.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
+            <a class="link-dark" href="https://twitter.com">
+              <img src="images/icon/twitter.svg" alt="twitter" width="24" height="24" />
             </a>
           </li>
           <li class="ms-3">
-            <a class="link-dark">
-              <img
-                src="../images/icon/instagram.svg"
-                alt="instagram"
-                width="24"
-                height="24"
-              />
+            <a class="link-dark" href="https://instagram.com">
+              <img src="images/icon/instagram.svg" alt="instagram" width="24" height="24" />
             </a>
           </li>
           <li class="ms-3">
-            <a class="link-dark">
-              <img
-                src="../images/icon/facebook.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
+            <a class="link-dark" href="https://facebook.com">
+              <img src="images/icon/facebook.svg" alt="twitter" width="24" height="24" />
             </a>
           </li>
         </ul>
@@ -713,10 +395,6 @@
     </script>
 
     <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
